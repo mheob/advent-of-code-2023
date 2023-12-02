@@ -1,0 +1,38 @@
+{
+	"name": "@mheob/advent-of-code-template",
+	"version": "1.0.0",
+	"private": true,
+	"description": "My personal template for Advent of Code",
+	"keywords": [
+		"advent-of-code",
+		"template"
+	],
+	"homepage": "https://github.com/mheob/advent-of-code-template",
+	"bugs": "https://github.com/mheob/advent-of-code-template/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mheob/advent-of-code-template"
+	},
+	"license": "MIT",
+	"author": "Alexander Böhm <tools@boehm.work>",
+	"type": "module",
+	"module": "index.ts",
+	"scripts": {
+		"day": "bun run ./src/scripts/runDay.ts",
+		"setup": "bun run ./src/scripts/setupDay.ts",
+		"lint": "eslint src/**/*.ts --fix",
+		"format": "prettier --write \"**/*.{cjs,js,mjs,ts,json,md,mdx,yaml,yml}\""
+	},
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@mheob/eslint-config": "^5.2.0",
+		"@mheob/prettier-config": "^3.2.0",
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.3.2"
+	}
+}
