@@ -33,6 +33,10 @@ export function generateTemplate(day: Day) {
 
 const input = await readInput('${formatDayName(day)}');
 
+// ############################################################
+// ------------------------- Part 1 ---------------------------
+// ############################################################
+
 export async function part1() {
 	const lines = await parseLines(input);
 	// TODO: add your code goes here

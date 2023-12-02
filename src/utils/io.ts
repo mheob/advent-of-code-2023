@@ -8,7 +8,10 @@ async function readFile(filepath: string) {
 	return text.trim();
 }
 
-export async function readInput(directory: DayName, fileName: string = 'input') {
+// eslint-disable-next-line @typescript-eslint/ban-types
+type INPUT_FILE_NAME = 'input' | 'example' | (string & {});
+
+export async function readInput(directory: DayName, fileName: INPUT_FILE_NAME = 'input') {
 	const filepath = `./src/${directory}/${fileName}.txt`;
 	return readFile(filepath);
 }

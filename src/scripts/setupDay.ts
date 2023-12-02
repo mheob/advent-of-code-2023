@@ -65,6 +65,8 @@ async function setupDay(day: Day) {
 		await Promise.all([
 			Bun.write(new URL('input.txt', directory.href), input ?? ''),
 			Bun.write(new URL('index.ts', directory.href), generateTemplate(day)),
+			Bun.write(new URL('example.txt', directory.href), ''),
+			Bun.write(new URL('README.md', directory.href), ''),
 		]);
 		printSuccessSetUpMessage(day);
 	} catch (error) {
