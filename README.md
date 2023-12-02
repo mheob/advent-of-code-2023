@@ -58,7 +58,7 @@ const input = await readInput('day-01');
 
 export const part1 = () => {
 	const lines = parseLines(input);
-	// your code goes here
+	// TODO: add your code goes here
 	return lines.length;
 };
 ```
@@ -66,17 +66,18 @@ export const part1 = () => {
 `bun day <day-num>` output:
 
 ```text
+🕯️ Your result for day <DAY>:
 🌲 Part One: 70698 (1.11 ms)
 🎄 Part Two: 140471 (383.5 µs)
 ```
 
 ## Days
 
-✅ / ❌
+⭐ / ❌
 
 | Day | Part 1 | Part 2 |           Solution            |              Advent of Code link               |
 | :-: | :----: | :----: | :---------------------------: | :--------------------------------------------: |
-| 01  |   ✅   |   ❌   | [Link](./src/day-01/index.ts) | [Day 01](https://adventofcode.com/2023/day/1)  |
+| 01  |   ⭐   |   ⭐   | [Link](./src/day-01/index.ts) | [Day 01](https://adventofcode.com/2023/day/1)  |
 | 02  |        |        |                               | [Day 02](https://adventofcode.com/2023/day/2)  |
 | 03  |        |        |                               | [Day 03](https://adventofcode.com/2023/day/3)  |
 | 04  |        |        |                               | [Day 04](https://adventofcode.com/2023/day/4)  |

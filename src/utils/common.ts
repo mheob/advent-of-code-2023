@@ -35,7 +35,7 @@ const input = await readInput('${formatDayName(day)}');
 
 export async function part1() {
 	const lines = await parseLines(input);
-	// your code goes here
+	// TODO: add your code goes here
 	return lines.length;
 }
 `;
