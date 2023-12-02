@@ -2,6 +2,10 @@ import { parseLines, readInput } from '../utils/io';
 
 const input = await readInput('day-01');
 
+// ############################################################
+// ------------------------- Part 1 ---------------------------
+// ############################################################
+
 export async function part1() {
 	const lines = await parseLines(input);
 	const numbers = lines.map((line) => {
@@ -26,6 +30,10 @@ const numberMap = {
 } as const;
 
 type NumbersAsText = keyof typeof numberMap;
+
+// ############################################################
+// ------------------------- Part 2 ---------------------------
+// ############################################################
 
 export async function part2() {
 	const lines = await parseLines(input);
