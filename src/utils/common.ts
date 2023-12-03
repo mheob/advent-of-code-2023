@@ -44,3 +44,18 @@ export async function part1() {
 }
 `;
 }
+
+/**
+ * Generates an array of numbers within a specified range.
+ * @param start The starting number of the range.
+ * @param stop The ending number of the range.
+ * @param step The increment or decrement value. Default is 1.
+ * @returns An array of numbers within the specified range.
+ */
+export function range(start: number, stop: number, step: number = 1): number[] {
+	const result: number[] = [];
+	for (let index = start; step > 0 ? index < stop : index > stop; index += step) {
+		result.push(index);
+	}
+	return result;
+}

@@ -79,7 +79,7 @@ export const part1 = () => {
 | :-: | :----: | :----: | :---------------------------: | :--------------------------------------------: |
 | 01  |   ⭐   |   ⭐   | [Link](./src/day-01/index.ts) | [Day 01](https://adventofcode.com/2023/day/1)  |
 | 02  |   ⭐   |   ⭐   | [Link](./src/day-02/index.ts) | [Day 02](https://adventofcode.com/2023/day/2)  |
-| 03  |        |        |                               | [Day 03](https://adventofcode.com/2023/day/3)  |
+| 03  |   ⭐   |        | [Link](./src/day-03/index.ts) | [Day 03](https://adventofcode.com/2023/day/3)  |
 | 04  |        |        |                               | [Day 04](https://adventofcode.com/2023/day/4)  |
 | 05  |        |        |                               | [Day 05](https://adventofcode.com/2023/day/5)  |
 | 06  |        |        |                               | [Day 06](https://adventofcode.com/2023/day/6)  |
