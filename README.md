@@ -83,7 +83,7 @@ export const part1 = () => {
 | 04  |   ⭐   |   ⭐   | [Link](./src/day-04/index.ts) | [Day 04](https://adventofcode.com/2023/day/4)  |
 | 05  |   ⭐   |   ⭐   | [Link](./src/day-05/index.ts) | [Day 05](https://adventofcode.com/2023/day/5)  |
 | 06  |   ⭐   |   ⭐   | [Link](./src/day-06/index.ts) | [Day 06](https://adventofcode.com/2023/day/6)  |
-| 07  |        |        |                               | [Day 07](https://adventofcode.com/2023/day/7)  |
+| 07  |   ⭐   |   ⭐   | [Link](./src/day-07/index.ts) | [Day 07](https://adventofcode.com/2023/day/7)  |
 | 08  |        |        |                               | [Day 08](https://adventofcode.com/2023/day/8)  |
 | 09  |        |        |                               | [Day 09](https://adventofcode.com/2023/day/9)  |
 | 10  |        |        |                               | [Day 10](https://adventofcode.com/2023/day/10) |
