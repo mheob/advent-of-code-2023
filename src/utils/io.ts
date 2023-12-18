@@ -21,7 +21,7 @@ export async function parseLines<T = string>(
 	as?: Transform<T>,
 	{ includeEmpty = false }: { includeEmpty?: boolean } = {},
 ) {
-	let lines = input.split('\n');
+	let lines = input.trim().split('\n');
 	if (!includeEmpty) {
 		lines = lines.filter(Boolean);
 	}
