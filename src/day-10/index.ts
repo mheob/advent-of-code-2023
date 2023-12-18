@@ -1,13 +1,8 @@
+import { key } from '../utils/common';
 import { parseLines, readInput } from '../utils/io';
 
 const input = await readInput('day-10');
 // const input = await readInput('day-10', 'example');
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function key(...items: any) {
-	// eslint-disable-next-line prefer-rest-params
-	return [...(typeof items === 'object' ? items : arguments)].join(':');
-}
 
 function findPipe(above: boolean, below: boolean, before: boolean, after: boolean) {
 	return above ? (after ? 'L' : before ? 'J' : '|') : below ? (after ? 'F' : '7') : '-';
@@ -31,14 +26,22 @@ async function shared(lines: string[][]) {
 		const visited = new Set();
 		// eslint-disable-next-line no-constant-condition
 		while (true) {
-			visited.add(key(y, x));
-			if (y > 0 && ['J', '|', 'L'].includes(lines[y][x]) && !visited.has(key(y - 1, x))) {
+			visited.add(key([y, x]));
+			if (y > 0 && ['J', '|', 'L'].includes(lines[y][x]) && !visited.has(key([y - 1, x]))) {
 				y--;
-			} else if (y < maxY && ['7', '|', 'F'].includes(lines[y][x]) && !visited.has(key(y + 1, x))) {
+			} else if (
+				y < maxY &&
+				['7', '|', 'F'].includes(lines[y][x]) &&
+				!visited.has(key([y + 1, x]))
+			) {
 				y++;
-			} else if (x > 0 && ['J', '-', '7'].includes(lines[y][x]) && !visited.has(key(y, x - 1))) {
+			} else if (x > 0 && ['J', '-', '7'].includes(lines[y][x]) && !visited.has(key([y, x - 1]))) {
 				x--;
-			} else if (x < maxX && ['L', '-', 'F'].includes(lines[y][x]) && !visited.has(key(y, x + 1))) {
+			} else if (
+				x < maxX &&
+				['L', '-', 'F'].includes(lines[y][x]) &&
+				!visited.has(key([y, x + 1]))
+			) {
 				x++;
 			} else {
 				return visited;
@@ -76,7 +79,7 @@ export async function part2() {
 	let countInside = 0;
 	for (let y = 0, inside: string | boolean = false; y < lines.length; y++) {
 		[...lines[y]].forEach((ch, x) => {
-			if (path.has(key(y, x))) {
+			if (path.has(key([y, x]))) {
 				switch (inside) {
 					case 'above': {
 						inside = ch === 'J' ? false : ch === '7' ? true : 'above';

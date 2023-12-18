@@ -69,3 +69,34 @@ export function range(start: number, stop: number, step: number = 1): number[] {
 	}
 	return result;
 }
+
+/**
+ * Concatenates all the arguments with a colon (:) separator.
+ *
+ * @param {...any} items - Any number of arguments of any type.
+ * @returns A string that concatenates all the arguments with a colon (:) separator.
+ *
+ * @example
+ * const result = key('a', 'b', 'c');
+ * console.log(result); // Output: 'a:b:c'
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function key(items: any) {
+	// eslint-disable-next-line prefer-rest-params
+	return [...(typeof items === 'object' ? items : arguments)].join(':');
+}
+
+/**
+ * Calculates the sum of all numbers in an array.
+ *
+ * @param array - An array of numbers.
+ * @returns The sum of all numbers in the array.
+ *
+ * @example
+ * const numbers = [1, 2, 3, 4, 5];
+ * const result = sum(numbers);
+ * console.log(result); // Output: 15
+ */
+export function sum(array: number[]) {
+	return array.reduce((x, y) => x + y, 0);
+}
