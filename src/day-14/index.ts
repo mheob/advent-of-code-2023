@@ -113,6 +113,10 @@ export async function part1() {
 	return load(lines);
 }
 
+// ############################################################
+// ------------------------- Part 2 ---------------------------
+// ############################################################
+
 /**
  * Performs a series of tilting operations on a grid of strings and detects cycles in the grid.
  * If a cycle is detected, it adjusts the index accordingly and returns the final grid configuration.
