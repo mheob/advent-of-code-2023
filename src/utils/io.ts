@@ -18,10 +18,11 @@ export async function readInput(directory: DayName, fileName: INPUT_FILE_NAME = 
 
 export async function parseLines<T = string>(
 	input: string,
+	separator = '\n',
 	as?: Transform<T>,
 	{ includeEmpty = false }: { includeEmpty?: boolean } = {},
 ) {
-	let lines = input.trim().split('\n');
+	let lines = input.trim().split(separator);
 	if (!includeEmpty) {
 		lines = lines.filter(Boolean);
 	}
