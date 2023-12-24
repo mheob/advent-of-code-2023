@@ -3,6 +3,6 @@ module.exports = {
 	root: true,
 	extends: ['@mheob/eslint-config'],
 	rules: {
-		'no-console': 'off',
+		'no-console': ['error', { allow: ['warn', 'error'] }],
 	},
 };
