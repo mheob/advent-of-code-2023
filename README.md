@@ -97,7 +97,7 @@ export const part1 = () => {
 | 18  |   ⭐   |   ⭐   | [Link](./src/day-18) | [Day 18](https://adventofcode.com/2023/day/18) |
 | 19  |   ⭐   |   ⭐   | [Link](./src/day-19) | [Day 19](https://adventofcode.com/2023/day/19) |
 | 20  |   ⭐   |   ⭐   | [Link](./src/day-20) | [Day 20](https://adventofcode.com/2023/day/20) |
-| 21  |        |        |                      | [Day 21](https://adventofcode.com/2023/day/21) |
+| 21  |   ⭐   |   ⭐   | [Link](./src/day-21) | [Day 21](https://adventofcode.com/2023/day/21) |
 | 22  |        |        |                      | [Day 22](https://adventofcode.com/2023/day/22) |
 | 23  |        |        |                      | [Day 23](https://adventofcode.com/2023/day/23) |
 | 24  |        |        |                      | [Day 24](https://adventofcode.com/2023/day/24) |
