@@ -81,9 +81,8 @@ export function range(start: number, stop: number, step: number = 1): number[] {
  * console.log(result); // Output: 'a:b:c'
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function key(items: any) {
-	// eslint-disable-next-line prefer-rest-params
-	return [...(typeof items === 'object' ? items : arguments)].join(':');
+export function key(...items: any) {
+	return [...items].join(':');
 }
 
 /**
