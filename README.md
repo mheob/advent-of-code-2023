@@ -101,4 +101,4 @@ export const part1 = () => {
 | 22  |   ⭐   |   ⭐   | [Link](./src/day-22) | [Day 22](https://adventofcode.com/2023/day/22) |
 | 23  |   ⭐   |   ⭐   | [Link](./src/day-23) | [Day 23](https://adventofcode.com/2023/day/23) |
 | 24  |   ⭐   |   ❌   | [Link](./src/day-24) | [Day 24](https://adventofcode.com/2023/day/24) |
-| 25  |        |        |                      | [Day 25](https://adventofcode.com/2023/day/25) |
+| 25  |   ⭐   |   ❌   | [Link](./src/day-25) | [Day 25](https://adventofcode.com/2023/day/25) |
