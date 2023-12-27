@@ -79,8 +79,6 @@ Find the longest hike you can take through the hiking trails listed on your map.
 
 ## Part Two
 
-## \--- Part Two ---
-
 As you reach the trailhead, you realize that the ground isn't as slippery as you expected; you'll have _no problem_ climbing up
 the steep slopes.
 
